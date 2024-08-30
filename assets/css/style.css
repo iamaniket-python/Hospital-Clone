@@ -233,10 +233,7 @@ body{
     -o-transition:all 05s ease;
     transition:all .5s ease;
   }
-  
-  .portfolio-item{
-    /*width:100%;*/
-  }
+
   .portfolio-item .item{
     /*width:303px;*/
     float:left;
