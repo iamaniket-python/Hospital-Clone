@@ -22,52 +22,62 @@
     <link rel="favicon" href="assets/images/font/medical-assistant_14705055.gif">
 </head>
 <body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var toggler = document.getElementById('navbarToggler');
+        var navbarNav = document.getElementById('navbarNav');
+
+        toggler.addEventListener('click', function () {
+            if (navbarNav.classList.contains('show')) {
+                navbarNav.classList.remove('show');
+            } else {
+                navbarNav.classList.add('show');
+            }
+        });
+    });
+</script>
 
     
-<nav  class="navbar navbar-expand-lg navbar-light w-100">
-    <div class="container px-3">
-        <a class="navbar-brand" href="../../index.html"><img src="assets/images/logo/logo.jpg" alt /></a>
-        <button class="navbar-toggler offcanvas-nav-btn" type="button">
-            <i class="bi bi-list"></i>
-        </button>
+<nav class="navbar navbar-expand-lg  ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../../index.html"><img src="assets/images/logo/logo.jpg" alt /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="doctors.html">DOCTORS</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DEPARTMENTS</a>
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="cardiology.html">Cardilogy</a></li>
+              <li><a class="dropdown-item" href="dental.html">Dental</a></li>
+              <li><a class="dropdown-item" href="neurologist.html">Neurologist</a></li>
+              <li><a class="dropdown-item" href="xray.html">X-ray</a></li>
+            
+              </ul>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="gallery.html">GALLERY</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="apponiment.html">APPONIMENT</a>
+  </li>
+    <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="service.html">SERVICE</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="contact.html">CONTACT</a>
+    </li>
 
-        <div class="offcanvas offcanvas-start offcanvas-nav" style="width: 10rem">
-            <div class="offcanvas-header">
-                <a href="../../index.html" class="text-inverse"><img src="../../assets/images/logo/logo.svg" alt /></a>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body pt-0 align-items-center">
-                <ul class="navbar-nav mx-auto align-items-lg-center">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="doctors.html">DOCTORS</a>
-              </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DEPARTMENTS</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="cardiology.html">Cardilogy</a></li>
-                        <li><a class="dropdown-item" href="dental.html">Dental</a></li>
-                        <li><a class="dropdown-item" href="neurologist.html">Neurologist</a></li>
-                        <li><a class="dropdown-item" href="xray.html">X-ray</a></li>
-                      
-                        </ul>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="gallery.html">GALLERY</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="apponiment.html">APPONIMENT</a>
-                      </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="service.html">SERVICE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="contact.html">CONTACT</a>
-                        </li>
-
-        </div>
+      </ul>
     </div>
+  </div>
 </nav>
 <!-- ----------------------------------------------------------------- -->
 <div class="header-image">
